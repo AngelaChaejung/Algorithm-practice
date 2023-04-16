@@ -1,6 +1,24 @@
 // 모든 요소가 새의 typeid를 의미하는 배열이주어집니다.
 // 만약 하나의 타입 이상이 최대치에 spot된다면 그들의 가장 작은 id를 return.
 
+// function migratoryBirds(arr) {
+// const count = {};
+// let maxCount = 0;
+// let maxId = 0;
+// for (let id of arr) {
+//   console.log("id:" + id);
+
+//   count[id] = (count[id] || 0) + 1; // 새 ID 등장 횟수 카운팅
+//   if (count[id] > maxCount || (count[id] === maxCount && id < maxId)) {
+//     // 등장 횟수가 현재 최대 등장 횟수보다 많거나, 같은 경우 ID가 더 작은 것으로 갱신
+//     maxCount = count[id];
+//     console.log(count[id]);
+//     maxId = id;
+//   }
+// }
+// return maxId;
+// }
+
 function migratoryBirds(arr) {
   let maxdup = 0;
   let maxdupelement = 0;
